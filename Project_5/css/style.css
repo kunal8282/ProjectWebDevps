@@ -15,6 +15,7 @@
     background-position: center;
     background-size: cover;
     position: relative;
+    background-attachment: fixed;
 }
 
 nav{
@@ -45,6 +46,18 @@ nav .logo{
     text-decoration: none;
     font-size: 15px;
     text-transform: uppercase;
+}
+
+.nav_links ul li .login_btn{
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #f44336;
+    border-radius: 4px;
+    padding: 10px 34px;
+    background: #f44336;
+    font-size: 13px;
+    position: relative;
+    cursor: pointer;
 }
 
 .nav_links ul li::after{
@@ -358,6 +371,7 @@ nav .fas{
 
 .foot{
     width: 100%;
+    background-color: rgb(245, 245, 245);
     text-align: center;
     padding: 30px 0;
 }
@@ -375,4 +389,163 @@ nav .fas{
     font-size: 20px;
     color: #f44336;
     cursor: pointer;
+}
+
+.foot .copy{
+    margin-bottom: 0;
+}
+
+.sub_header{
+    min-height: 50vh;
+    width: 100%;
+    background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(/img/background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    /* background-attachment: fixed;     */
+    text-align: center;
+    color: #fff;
+}
+
+.sub_header h1{
+    margin-top: 100px;
+}
+
+.about_us{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0 80px 0;
+}
+
+.about_us .about_col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+
+.about_us .about_col img{
+    width: 100%;
+    padding: 50px 0 0 20px;
+}
+
+.about_us .about_col a{
+    display: inline-block;
+    text-decoration: none;
+    color: #f44336;
+    border: 1px solid #f44336;
+    margin: 20px 0 0 10px ;
+    padding: 12px 34px;
+    background: transparent;
+    font-size: 13px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.about_us .about_col a:hover{
+   background-color: #f44336;
+   color: white;
+}
+
+@media (max-width: 700px) {
+    .about_us .about_col img{
+        padding: 0 10px;
+    }
+}
+
+.blog_content{
+    width: 80%;
+    margin: auto;
+    padding: 60px 0;
+    /* text-align: center; */
+}
+
+.blog_content .left{
+    flex-basis: 65%;
+}
+
+.blog_content .left img{
+    width: 100%;
+}
+
+.blog_content .left h1{
+    color: #222;
+    font-size: 23px;
+    font-weight: 600;
+    margin: 30px 0;    
+}
+
+
+.left p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 0;
+}
+
+.right{
+    flex-basis: 32%;
+}
+
+.right h3{
+    background: #f44336;
+    color: #fff;
+    padding: 7px 0;
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.right div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #555;
+    padding: 8px;
+}
+
+.comment_btn{
+    display: inline-block;
+    text-decoration: none;
+    color:#f44336;
+    border: 1px solid #f44336;
+    margin: 0 0 10px 0;
+    padding: 12px 34px;
+    background: transparent;
+    font-size: 13px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.comment_box{
+    border: 1px solid #ccc;
+    margin: 50px 0;
+    padding: 10px 20px;
+}
+
+.comment_box h3{
+    text-align: left;
+    margin: 10px 0 10px 0;
+}
+
+.comment_box input, textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #f0f0f0;
+    border: none;
+    outline: none;
+}
+
+.comment_btn:hover{
+    color: #fff;
+    background-color: #f44336;
+}
+
+@media (max-width: 700px) {
+    .sub_header h1{
+        font-size: 18px;
+    }
 }
