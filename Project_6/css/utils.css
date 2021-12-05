@@ -1,0 +1,18 @@
+.fas{
+    color: rgb(255, 103, 103);
+}
+
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(255, 103, 103);
+    border: 1px solid rgb(255, 103, 103);
+    padding:8px 30px;
+    border-radius: 4px;
+    transition: 0.5s ;
+}
+
+.btn:hover{
+    background-color: rgb(255, 103, 103);
+    color: #fff;
+}
