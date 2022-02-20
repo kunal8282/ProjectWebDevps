@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <div class="heading">
+        <h1>New Year Eve</h1>
+    </div>
+
+
+    <div class="countdown-container">
+        <div class="cont days-cont">
+            <p class="big-text" id="days">0</p>
+            <span>days</span>
+        </div>
+
+        <div class="cont hours-cont">
+            <p class="big-text" id="hours">0</p>
+            <span>hours</span>
+        </div>
+
+        <div class="cont min-cont">
+            <p class="big-text" id="min">0</p>
+            <span>minutes</span>
+        </div>
+
+        <div class="cont sec-cont">
+            <p class="big-text" id="sec">0</p>
+            <span>sec</span>
+        </div>
+
+    </div>
+
+
+
+    <script>
+        const newYears = '1 Jan 2023';
+        const setDay = document.querySelector('#days');
+        const setHours = document.querySelector('#hours');
+        const setMin = document.querySelector('#min');
+        const setSec = document.querySelector('#sec')
+
+        function countdown() {
+            const currentDate = new Date();
+            const newYearDate = new Date(newYears);
+
+            const duration = newYearDate - currentDate;
+
+            let days = Math.floor(duration/(1000*60*60*24));
+            let seconds = Math.floor((duration / 1000) % 60)
+            let minutes = Math.floor((duration / (1000 * 60)) % 60)
+            let hours = Math.floor((duration / (1000 * 60 * 60)) % 24)
+
+            hours = (hours < 10) ? "0" + hours : hours;
+            minutes = (minutes < 10) ? "0" + minutes : minutes;
+            seconds = (seconds < 10) ? "0" + seconds : seconds;
+
+            setDay.innerHTML = days;
+            setHours.innerHTML = hours;
+            setMin.innerHTML = minutes;
+            setSec.innerHTML = seconds;
+
+        }
+
+        
+
+        setInterval(countdown,1000);
+    </script>
+</body>
+
+</html>

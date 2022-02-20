@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #4e5497;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+
+}
+
+.movies{
+    background-color: #373b69;
+    border-radius: 3px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+    margin: 1rem;
+    width: 300px;
+}
+
+.movies img{
+    /* height: 100px; */
+    /* object-fit: cover; */
+    width: 100%;
+}
+
+.movies .moviesInfo{
+    display: flex;
+    height: 30px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    color: #eee;
+    letter-spacing: 0.5px;
+}
+
+.movies .moviesInfo h3{
+    font-size: 1rem;    
+}
+
+.movies .moviesInfo span{
+    background-color: #373b69;
+    border-radius: 3px;
+    padding: 0.25rem 0.5rem;
+}
+
+.searchBar{
+    position: absolute;
+    right: 9px;
+    margin: 10px;
+    height: 8vh;
+}
+
+.searchBar input{
+    padding: 0.2rem 1rem;
+    border-radius: 3px;
+    border: 1px solid snow;
+    outline: none;
+    /* background-color: transparent; */
+}
+
+.searchBar input::placeholder{
+    color: #373b69;
+}
+
+.searchBar .btn{
+    padding: 0.2rem 1rem;
+    border-radius: 5px;
+    border: none;
+    transition: 0.5s;
+}
+
+.searchBar .btn:hover{
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: wheat;
+}
